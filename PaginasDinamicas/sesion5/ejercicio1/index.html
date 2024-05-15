@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 7</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--
+    **************************************************************************************
+    *                                                                                    *
+    *                                     Actividad 1                                    *
+    *                                                                                    *
+    **************************************************************************************
+    Se creará un formulario muy sencillo, el cual controlará el aspecto de un texto.
+    Tanto el color de la letra como del fondo del elemento se podrán modificar 
+    cambiando el valor de elementos select y utilizando eventos.
+
+    Primero se utilizarán atributos HTML y luego se realizará lo mismo utilizando
+    el método addEventListener.
+    -->
+    <!--
+        Paso 1:
+        Crear el formulario con los dos elementos select y sus opciones. Es importante 
+        que escribamos los colores tal y como los reconoce CSS como valor de cada option.
+
+        Paso 2:
+        Crear el texto que manipularemos utilizando eventos.
+
+        Paso 3: 
+        Agregar algunos estilos para mejorar el aspecto de la página.
+
+        Paso 4: 
+        Ir a script.js y definir los eventos.
+    -->
+    <form>
+        <div class="input-group">
+            <label for="color-texto">Color del texto: </label>
+            <select id="color-texto">
+                <option value="black">Negro</option>
+                <option value="white">Blanco</option>
+                <option value="green">Verde</option>
+                <option value="blue">Azul</option>
+                <option value="yellow">Amarillo</option>
+                <option value="orange">Naranjo</option>
+                <option value="red">Rojo</option>
+                <option value="pink">Rosa</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="color-fondo">Color del fondo: </label>
+            <select id="color-fondo">
+                <option value="white">Blanco</option>
+                <option value="black">Negro</option>
+                <option value="green">Verde</option>
+                <option value="blue">Azul</option>
+                <option value="yellow">Amarillo</option>
+                <option value="orange">Naranjo</option>
+                <option value="red">Rojo</option>
+                <option value="pink">Rosa</option>
+            </select>
+        </div>
+    </form>
+
+    <div class="text-center">
+        <h2 id="texto" class="bordes text-center inline-block px-20 py-10 my-0">Cracker</h2>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 7</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="stylos.css">
+</head>
+
+<body>
+
+    <h2 id="titulo" class="text-center">Formulario de registro</h2>
+    <form>
+        <table class="form-table">
+            <tr class="input-group">
+                <td>
+                    <label for="nombres" class="form-label">Nombres </label>
+                </td>
+                <td>
+                    <input id="nombres" class="input-field" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <p class="requisitos">Este campo debe contener al menos 2 caracteres. Obligatorio.</p>
+                </td>
+            </tr>
+            <tr class="input-group">
+                <td>
+                    <label for="apellidos" class="form-label">Apellidos </label>
+                </td>
+                <td>
+                    <input id="apellidos" class="input-field" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <p class="requisitos">Este campo debe contener al menos 3 caracteres. Obligatorio.</p>
+                </td>
+            </tr>
+            <tr class="input-group">
+                <td>
+                    <label for="nacimiento" class="form-label">Fecha de nacimiento </label>
+                </td>
+                <td>
+                    <input id="nacimiento" class="input-field" type="date">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <p class="requisitos">Obligatorio.</p>
+                </td>
+            </tr>
+            <tr class="input-group">
+                <td>
+                    <label for="usuario" class="form-label">Usuario </label>
+                </td>
+                <td>
+                    <input id="usuario" class="input-field" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <p class="requisitos">Este campo debe contener al menos 5 caracteres, no se admiten espacios. Obligatorio.</p>
+                </td>
+            </tr>
+            <tr class="input-group">
+                <!-- No usaremos el input de tipo email ya que realizaremos la 
+                validación con nuestra propia función. También es válido utilizar 
+                type email y agregar el atributo formnovalidate="formnovalidate"
+                en este elemento input o el atributo "novalidate" en el elemento 
+                form -->
+                <td>
+                    <label for="email" class="form-label">Correo electrónico </label>
+                </td>
+                <td>
+                    <input id="email" class="input-field" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <p class="requisitos">Introduzca una dirección válida, que contenga los caracteres @ y un dominio.
+                        Obligatorio.</p>
+                </td>
+            </tr>
+            <tr class="input-group">
+                <td>
+                    <label for="direccion" class="form-label">Dirección </label>
+                </td>
+                <td>
+                    <input id="direccion" class="input-field" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <p class="requisitos">Este campo debe contener al menos 20 caracteres.</p>
+                </td>
+            </tr>
+            <tr class="input-group">
+                <td>
+                    <label for="ciudad" class="form-label">Ciudad </label>
+                </td>
+                <td>
+                    <input id="ciudad" class="input-field" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <p class="requisitos">Este campo debe contener al menos 4 caracteres.</p>
+                </td>
+            </tr>
+            <tr class="input-group">
+                <td>
+                    <label for="pais" class="form-label">País </label>
+                </td>
+                <td>
+                    <select id="pais" class="select-field">
+                        <option value=""></option>
+                        <option value="peru">Perú</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="chile">Chile</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="venezuela">Venezuela</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="paraguay">Paraguay</option>
+                        <option value="mexico">México</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <p class="requisitos">Obligatorio.</p>
+                </td>
+            </tr>
+            <tr class="input-group">
+                <td>
+                    <label for="pass" class="form-label">Contraseña </label>
+                </td>
+                <td>
+                    <input id="pass" class="input-field" type="password">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <p class="requisitos">Escriba una contraseña de al menos 8 caracteres, incluyendo al menos una
+                        mayúscula,
+                        una minúscula y un número.</p>
+                </td>
+            </tr>
+        </table>
+
+        <button type="button" id="btn">Enviar</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

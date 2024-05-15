@@ -1,0 +1,54 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.form-table {
+    margin: 30px;
+}
+
+#titulo {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.form-label, .input-field, .select-field {
+    display: block;
+}
+
+.input-field, .select-field {
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 300px;
+    font-size: 1rem;
+}
+
+.requisitos {
+    margin-top: 0;
+    margin-left: 20px;
+    font-size: 0.8rem;
+    color: rgb(55, 54, 54);
+}
+
+#btn {
+    margin-left: 40px;
+    font-size: 1rem;
+    background-color: rgb(151, 181, 171);
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#btn:hover {
+    background-color: white;
+    border: solid 1px rgb(151, 181, 171);
+}
+
+#mensaje {
+    margin-left: 20px;
+    color: red;
+}

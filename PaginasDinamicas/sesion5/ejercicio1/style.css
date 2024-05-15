@@ -1,0 +1,26 @@
+.bordes {
+    border: 1px solid black;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.px-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.py-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.my-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.text-center {
+    text-align: center;
+}
