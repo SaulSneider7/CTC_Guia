@@ -49,7 +49,8 @@ class Game:
                     self.displayText("YOU DIED")
 
             for rocket in self.rockets:
-                if not self.win: rocket.draw()
+                if not self.win: 
+                    rocket.draw()
                 if rocket.y<=0:
                     self.rockets.remove(rocket)
 

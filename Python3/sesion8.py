@@ -1,5 +1,7 @@
 import pygame
 import pygame_menu
+# pip install pygame_menu
+
 
 pygame.init()
 pantalla = pygame.display.set_mode((600, 400))
