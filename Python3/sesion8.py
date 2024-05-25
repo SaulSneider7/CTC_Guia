@@ -1,6 +1,7 @@
 import pygame
 import pygame_menu
 # pip install pygame_menu
+# pip install pyinstaller
 
 
 pygame.init()
@@ -18,11 +19,11 @@ class Game:
         self.height = height
         self.screen = pygame.display.set_mode((width, height))
         self.clock = pygame.time.Clock()
-        self.fondo = pygame.image.load("fondo.png")
+        self.fondo = pygame.image.load("recursos/fondo.png")
         self.dificultad = dificultad
         done = False
 
-        pygame.mixer.music.load("song.wav")
+        pygame.mixer.music.load("recursos/song.wav")
         pygame.mixer.music.play(-1)
 
         hero = Hero(self, width / 2, height - 20)
@@ -59,7 +60,8 @@ class Game:
                     self.displayText("YOU DIED")
 
             for rocket in self.rockets:
-                if not self.win: rocket.draw()
+                if not self.win: 
+                    rocket.draw()
                 if rocket.y <= 0:
                     self.rockets.remove(rocket)
 
@@ -78,7 +80,7 @@ class Alien:
         self.game = game
         self.y = y
         self.size = 30
-        self.image = pygame.image.load("alien.png")
+        self.image = pygame.image.load("recursos/alien.png")
         self.velocity = velocity
 
     def draw(self):
@@ -103,7 +105,7 @@ class Hero:
         self.x = x
         self.game = game
         self.y = y
-        self.image = pygame.image.load("nave2.png")
+        self.image = pygame.image.load("recursos/nave.png")
 
     def draw(self):
         # pygame.draw.rect(self.game.screen,(210, 250, 251),pygame.Rect(self.x, self.y, 8, 5))
@@ -156,3 +158,5 @@ menu.add.button('Quit', pygame_menu.events.EXIT)
 
 if __name__ == '__main__':
     menu.mainloop(pantalla)
+
+# pyinstaller sesion8.py --clean --onefile --noconsole

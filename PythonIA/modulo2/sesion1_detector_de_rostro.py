@@ -69,16 +69,15 @@ while True:
     # Comprobar que exista una imagen
     if not ret:
         break
-      
     # Crea una imagen en escala de grises a partir de la foto
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
     # Utiliza el detector en la imagen de escala de grises
     faces = faceClassif.detectMultiScale(gray,
-                                         scaleFactor=1.1,
-                                         minNeighbors=5,
-                                         minSize=(120, 120),
-                                         maxSize=(1000, 1000))
+                                            scaleFactor=1.1,
+                                            minNeighbors=5,
+                                            minSize=(120, 120),
+                                            maxSize=(1000, 1000))
 
     # Dibuja un rectángulo cuando se detecta un rostro
     for (x, y, w, h) in faces:

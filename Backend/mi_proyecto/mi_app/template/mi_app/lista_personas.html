@@ -11,5 +11,6 @@
             <li>{{ persona.nombre }} {{ persona.apellido }} - {{ persona.correo }}</li>
         {% endfor %}
     </ul>
+    <a href="{% url 'registrar_persona' %}">Registrar nueva persona</a>
 </body>
 </html>
