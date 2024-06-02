@@ -25,6 +25,8 @@ class Game:
 
         pygame.mixer.music.load("recursos/song.wav")
         pygame.mixer.music.play(-1)
+        # manejamos el volumen
+        pygame.mixer.music.set_volume(0.5)
 
         hero = Hero(self, width / 2, height - 20)
         generator = Generator(self, self.dificultad)
