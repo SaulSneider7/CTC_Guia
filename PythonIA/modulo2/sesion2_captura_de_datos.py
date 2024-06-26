@@ -57,10 +57,10 @@ while True:
 
     # Utiliza el detector en la imagen de escala de grises
     faces = faceClassif.detectMultiScale(gray,
-                                         scaleFactor=1.1,
-                                         minNeighbors=5,
-                                         minSize=(120, 120),
-                                         maxSize=(1000, 1000))
+                                            scaleFactor=1.1,
+                                            minNeighbors=5,
+                                            minSize=(120, 120),
+                                            maxSize=(1000, 1000))
 
     # Ciclo por cada rostro detectado en la imagen
     for (x, y, w, h) in faces:

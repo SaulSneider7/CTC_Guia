@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <!-- 1. Crearemos un formulario dentro de un contenedor (div con clase container)-->
+    <div class="container">
+        <h1 class="my-5 text-center">Formulario</h1>
+        <form>
+            <!-- 2. Agregaremos un campo al formulario. Mencionar que cada etiqueta label llevará la clase "form-label" y cada input de tipo texto (text, email) llevará la clase "form-control"-->
+            <!-- Si revisamos en el navegador el resultado hasta ahora (solo con las clases form-label y form-control), veremos que el campo ocupa casi todo el ancho de la ventana. Agregaremos márgenes para solucionarlo. -->
+            <!-- También se pueden agregar bordes y otros estilos para mejorar la página -->
+            <div class="mx-5 border border-muted border-1 rounded p-3 my-4">
+                <label for="nombres" class="form-label">Nombres</label>
+                <input type="text" class="form-control" id="nombres">
+            </div>
+            
+            <!-- 3. Agregaremos más campos -->
+            <div class="mx-5 border border-muted border-1 rounded p-3 my-4">
+                <label for="apellidos" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos">
+            </div>
+
+            <div class="mx-5 border border-muted border-1 rounded p-3 my-4">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            
+            <!-- Agregamos la clase "d-inline-block" para que este campo y el siguiente queden en la misma línea -->
+            <div class="ms-5 border border-muted border-1 rounded p-3 me-2 d-inline-block">
+                <label for="fecha-nacimiento" class="form-label">Fecha de nacimiento</label>
+                <!-- 
+                    Si no agregamos la clase "form-control" al input, el label y el input quedarán en la misma línea
+                    Cambiamos también los márgenes horizontales para que no queden demasiado separados ambos campos
+                -->
+                <input type="date" id="fecha-nacimiento" class="form-control">
+            </div>
+
+            <div class="me-2 border border-muted border-1 rounded p-3 ms-3 d-inline-block">
+                <label for="genero" class="form-label">Género</label>
+                <div>
+                    <input class="form-check-input" type="radio" name="genero">
+                    <label class="form-check-label me-2">Femenino</label>
+                    <input class="form-check-input" type="radio" name="genero">
+                    <label class="form-check-label me-2">Masculino</label>
+                    <input class="form-check-input" type="radio" name="genero">
+                    <label class="form-check-label me-2">No binario</label>
+                    <input class="form-check-input" type="radio" name="genero">
+                    <label class="form-check-label me-2">Prefiere no contestar</label>
+                </div>
+            </div>
+            <!-- 4. Para etiquetas select agregamos la clase "form-select" -->
+            <div class="me-2 border border-muted border-1 rounded p-3 ms-3 d-inline-block">
+                <label for="nacionalidad" class="form-label">Nacionalidad</label>
+                <select class="form-select">
+                    <option>Perú</option>
+                    <option>Chile</option>
+                    <option>Argentina</option>
+                    <option>Bolivia</option>
+                    <option>Costa Rica</option>
+                    <option>México</option>
+                    <option>Colombia</option>
+                    <option>Otro</option>
+                </select>
+            </div>
+
+            <!-- 5. Agregamos botón de envío -->
+            <div class="my-5 text-center">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- 
+        6. Validación: Rellena el formulario generado y presiona el botón, si todo es correcto se borrará la información ingresada 
+        Ingresa información que no cumpla con la forma requerida (por ejemplo, un correo electrónico sin @), deberían aparecer nubes indicando el error.
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

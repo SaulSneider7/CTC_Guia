@@ -6,6 +6,8 @@
 import cv2
 import os
 import numpy as np
+# instalar esta librería
+# pip install opencv-contrib-python
 
 # Carpeta con fotos de entrenamiento
 dataPath = './data'

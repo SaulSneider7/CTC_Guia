@@ -1,11 +1,11 @@
 import os
 
 
-#print(os.getlogin())  #El nombre de usuario que inició sesión en la PC.
+# print(os.getlogin())  #El nombre de usuario que inició sesión en la PC.
 
-#print(os.getcwd()) #La dirección de la carpeta actual donde nos encontramos.
+# print(os.getcwd()) #La dirección de la carpeta actual donde nos encontramos.
 
-#print(os.listdir("C:/Users/Cracker/PycharmProjects"))  #Lista de elementos presente en la carpeta
+# print(os.listdir("C:/xampp/htdocs/CTC_Guia"))  #Lista de elementos presente en la carpeta
 
 #os.mkdir("Carpeta 1")    #Crear una nueva carpeta en dicha dirección.
 
@@ -18,6 +18,7 @@ import os
 #os.startfile("Captura Python 1.png") #Abrir un archivo o programa que se encuentra en la ruta donde estamos.
 
 #Mini Proyecto (Pueden escogerse otros programas)
+
 lista = ["Chrome", "Internet Explorer", "Edge"]
 
 for x in range(3):
